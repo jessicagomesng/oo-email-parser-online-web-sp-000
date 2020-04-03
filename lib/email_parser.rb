@@ -7,12 +7,12 @@ class EmailParser
   attr_accessor :EmailAddressParser
 
   def initialize(EmailAddressParser)
-    @emailaddressparser = EmailAddressParser
+    @EmailAddressParser = EmailAddressParser
   end
 
   def parse
-    @email_addresses.split(/,|\s/)
-    @email_addresses.uniq
+    @EmailAddressParser.split(/,|\s/)
+    @EmailAddressParser.uniq
   end
 
 end
